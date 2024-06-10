@@ -48,7 +48,7 @@ test_generator = test_datagen.flow_from_directory(test_dir,
 
 #%%
 
-labels = [k for k in train_generator.class_indices]
+labels = [k for kply in train_generator.class_indices]
 sample_generate = train_generator.__next__()
 
 images = sample_generate[0]
